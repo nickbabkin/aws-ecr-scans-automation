@@ -14,3 +14,6 @@ Requirements:
 - elasticsearch
 - filebeat
 - aws creds set in ~/.aws/credentials file
+
+
+(scripts to be uploaded soon)
