@@ -1,6 +1,7 @@
 # aws-ecr-scans-automation
 
-AWS recently launched vulnerability scans which is a great addition but totally lacks any GUI to see results.
+AWS recently launched vulnerability scans which is a great addition but totally lacks any GUI to review results.
+
 The goal of this repository is to provide an automation for:
 
   1) Enabling scan-on-push feature for all repositories in your ECR
