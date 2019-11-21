@@ -1,5 +1,4 @@
 # aws-ecr-scans-automation
-Automating ECR scans and results retrieval + integration with ElasticSearch
 
 AWS recently launched vulnerability scans which is a great addition but totally lacks any GUI to see results.
 The goal of this repository is to provide an automation for:
