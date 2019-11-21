@@ -1,0 +1,14 @@
+- type: log
+
+  # Change to true to enable this input configuration.
+  enabled: true
+
+  # Paths that should be crawled and fetched. Glob based paths.
+  paths:
+    - "result.json"
+
+
+  json.keys_under_root: true
+
+  fields:
+         output_es_index: "ecr-vuln-scan"
