@@ -13,6 +13,7 @@ Requirements:
 - jq
 - elasticsearch
 - filebeat
+- aws console
 - aws creds set in ~/.aws/credentials file
 
 
