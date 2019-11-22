@@ -9,7 +9,7 @@ The goal of this repository is to provide an automation for:
   3) Retrieving results and sending them via filebeat to ElasticSearch cluster for review
   
   
-# Requirements
+## Requirements
 - jq
 - elasticsearch
 - filebeat
@@ -17,7 +17,7 @@ The goal of this repository is to provide an automation for:
 - aws creds set in ~/.aws/credentials file
 
 
-#Usage
+## Usage
 1. Change REGION variable according to your AWS region
 2. Run scripts:
 	- 2.1) enable-scanonpush-for-all.sh - to enable ScanOnPush setting for all ECR repositories in a respective region
