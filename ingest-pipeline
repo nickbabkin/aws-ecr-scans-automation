@@ -1,0 +1,19 @@
+PUT _ingest/pipeline/ecr-vuln-scan_pipeline
+{
+    "processors": [
+      {
+      "date" : {
+        "field" : "scanCompletedAt",
+        "target_field" : "scanCompletedAt",
+        "formats" : ["UNIX"]
+      }
+    },
+    {
+      "date" : {
+        "field" : "vulnDBUpdatedAt",
+        "target_field" : "vulnDBUpdatedAt",
+        "formats" : ["UNIX"]
+      }
+    }
+  ]
+}
