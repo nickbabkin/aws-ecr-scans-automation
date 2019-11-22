@@ -21,9 +21,9 @@ The goal of this repository is to provide an automation for:
 1. Change REGION variable according to your AWS region
 2. Run scripts:
 
-	2.1) enable-scanonpush-for-all.sh - to enable ScanOnPush setting for all ECR repositories in a respective region
-	2.2) launch-ondemand-scan-for-all.sh - to run scan on demand for latest uploaded images in all ECR repositories
-	2.3) retrieve-results.sh - to retrieve image scan results for latest uploaded images in all ECR repositories and put then in result.json file
+	- enable-scanonpush-for-all.sh - to enable ScanOnPush setting for all ECR repositories in a respective region
+	- launch-ondemand-scan-for-all.sh - to run scan on demand for latest uploaded images in all ECR repositories
+	- retrieve-results.sh - to retrieve image scan results for latest uploaded images in all ECR repositories and put then in result.json file
   
   
 
