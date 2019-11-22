@@ -21,9 +21,12 @@ The goal of this repository is to provide an automation for:
 1. Change REGION variable according to your AWS region
 2. Run scripts:
 
-	- enable-scanonpush-for-all.sh - to enable ScanOnPush setting for all ECR repositories in a respective region
-	- launch-ondemand-scan-for-all.sh - to run scan on demand for latest uploaded images in all ECR repositories
-	- retrieve-results.sh - to retrieve image scan results for latest uploaded images in all ECR repositories and put then in result.json file
+	- `enable-scanonpush-for-all.sh` - to enable ScanOnPush setting for all ECR repositories in a respective region
+	- `launch-ondemand-scan-for-all.sh` - to run scan on demand for latest uploaded images in all ECR repositories
+	- `retrieve-results.sh` - to retrieve image scan results for latest uploaded images in all ECR repositories and put then in result.json file
+3. Download Elasticsearch and Kibana from elastic.co. You will need version 7 or above.
+4. Install filebeat and use example config section from `filebeat-sample-config.yml` to get logs shipped to ElasticSearch.
+5. You will need an ElasticSearch ingest pipeline to convert UNIX timestamp in `scanCompletedAt` and `vulnDBUpdatedAt` fields to human-readable format. Use ingest-pipeline file for reference.
   
   
 
