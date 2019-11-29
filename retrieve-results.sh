@@ -8,6 +8,6 @@ aws ecr describe-repositories --query 'repositories[*].[repositoryName,imageScan
 do aws ecr describe-images --repository-name $repo  --query 'imageDetails[*].[imageDigest,imagePushedAt] | reverse(sort_by(@, &[1])) | [0][0]' \
 | while read digest; do aws ecr describe-image-scan-findings \
 --repository-name $repo --image-id imageDigest=$digest --region $REGION \
-| jq -c '{CVE: .imageScanFindings.findings[], repositoryName: .repositoryName, \
-imageScanStatus: .imageScanStatus.status, scanCompletedAt: .imageScanFindings.imageScanCompletedAt, \
+| jq -c '{CVE: .imageScanFindings.findings[], repositoryName: .repositoryName, 
+imageScanStatus: .imageScanStatus.status, scanCompletedAt: .imageScanFindings.imageScanCompletedAt, 
 vulnDBUpdatedAt: .imageScanFindings.vulnerabilitySourceUpdatedAt}'; sleep 1; done; sleep 1; done > result.json
